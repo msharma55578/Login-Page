@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Button,Form } from 'react-bootstrap';
 import axios from 'axios';
 import "./Styles.css";
+import { Link } from 'react-router-dom';
+
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -49,6 +51,9 @@ export default function Login() {
         <Button block size="lg" type="submit" disabled={!validateForm()}>
           Login
         </Button>
+        <Link to="/forget">
+            <label>forget password</label>
+        </Link>
       </Form>
     </div>
     )

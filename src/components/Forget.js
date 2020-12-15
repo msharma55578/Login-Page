@@ -58,7 +58,6 @@ export default function Forget() {
         <Button block size="lg" type="submit" disabled={!validateForm()}>
           Login
         </Button>
-        <label>forget password</label>
       </Form>
     </div>
     )
