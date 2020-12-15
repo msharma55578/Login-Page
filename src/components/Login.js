@@ -51,8 +51,11 @@ export default function Login() {
         <Button block size="lg" type="submit" disabled={!validateForm()}>
           Login
         </Button>
+        <Link to="/register">
+            <label>Sign Up</label>
+        </Link>
         <Link to="/forget">
-            <label>forget password</label>
+            <label className="tab">forget password</label>
         </Link>
       </Form>
     </div>

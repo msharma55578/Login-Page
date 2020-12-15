@@ -11,8 +11,7 @@ function App() {
       <Switch>
 				<Route path="/" component={Login} exact/>
 				<Route path="/forget" component={Forget} />
-				{/* <Route path="/create" component={CreatePage} /> */}
-				{/* <Route path='/publish' exact component={Publish}/> */}
+				<Route path="/register" component={Register} />
 			</Switch>
     </div>
   );

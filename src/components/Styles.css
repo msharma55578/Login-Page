@@ -8,3 +8,7 @@
       max-width: 320px;
     }
   }
+  .tab {
+    display: inline-block;
+    margin-left: 147px;
+}

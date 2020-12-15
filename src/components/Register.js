@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Button,Form } from 'react-bootstrap';
 import axios from 'axios';
 import "./Styles.css";
+import { Link } from 'react-router-dom';
 
 export default function Register() {
     const [name, setName] = useState("");
@@ -61,6 +62,9 @@ export default function Register() {
         <Button block size="lg" type="submit" disabled={!validateForm()}>
           Register
         </Button>
+        <Link to="/">
+            <label >Existing user Login</label>
+        </Link>
       </Form>
     </div>
     )
