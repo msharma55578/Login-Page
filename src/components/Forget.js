@@ -29,6 +29,7 @@ export default function Forget() {
       }
     })
   }
+  
     return (
         <div className="Login">
       <Form onSubmit={handleSubmit}>
